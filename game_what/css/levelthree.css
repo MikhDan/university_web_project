@@ -1,0 +1,104 @@
+body {
+    background-color: DarkMagenta;
+    display: flex;
+    
+    flex-direction: column;
+  }
+ 
+  
+  #rules{
+      width:fit-content;
+      height: fit-content;
+      margin: auto;
+      background: rgb(227, 218, 174);
+      background-size: cover;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-around;
+      position: absolute;
+      z-index: 1;
+      align-self: center;  
+  }
+  .common{
+    padding: 5%;
+  }
+  .title{
+      display: block;
+      text-align:center;
+      font: black;
+      font-weight: 900;
+      font-size: 20px;
+      font-weight: 600;
+      background: #ffffff;
+   }
+
+   #ps {
+    text-align: center;
+   }
+  
+  .btn{
+      display: block;
+      width: auto;
+      margin: 0 auto;
+      margin-top: 10px;
+      border-radius: 10px;
+      height: 35px;
+      border: none;
+      cursor: pointer;
+  }
+  .knopki {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .game{
+    overflow-x: hidden;
+   }
+.game{
+    width:1500px;
+    height: 500px;
+    background-image: url('../img/fon.png');
+    background-size: 1500px 500px;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: auto;
+    
+}
+#mickey{
+    width: 200px;
+    height: 180px;
+    background-image: url('../img/mickey.png');
+    background-size: 200px 180px;
+    position:relative;
+   top: 300px;
+}
+.animate{
+    animation: jump 0.3s linear;
+    
+}
+@keyframes jump{
+    0%{top: 100px;}
+    30%{top: 30px;}
+    70%{top: 30px;}
+    100%{top: 100px;}
+}
+
+#cheese{
+    background-image: url('../img/cheese.png');
+    background-size: 100px 100px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 200px;
+    left: 1200px;
+    animation: none ;
+    
+}
+@keyframes block{
+    0%{left: 1200px}
+    100%{left: -50px}
+}
+#schet{
+    text-align: center;
+    font-size: xx-large;
+}

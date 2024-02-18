@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" >
+  <title>LevelThree</title>
+  <link rel="stylesheet" href="css/levelthree.css">
+</head> 
+<body>
+  <section id="rules">
+      <div class="common">
+        <p class="title">Правила уровня:</p>
+        <section>
+          <ol>
+            <li>Вы увидите Микки Мауса.</li>
+            <li>Микки очень спешит к друзьям.</li>
+            <li>По дороге кто-то разбросал сыр, который отвлекает мышонка.</li>
+            <li>Помоги Микки не столкнуться с сыром.</li>
+            <li>За каждый обойденный сыр начисляется 1 балл.</li>
+            <li>Игра закончится, когда Микки решит перекусить.</li>
+            <li>Управление осуществляется кликом по левой кнопки мыши.</li>
+          </ol>
+      </section>  
+
+      <section id="ps">
+       <p> <i>P.S. Помните, всегда есть возможность завершить уровень и вернуться на начальный экран.</i></p> 
+      </section>
+          <button class="btn" type="submit" onclick="func_pon();">Понятно</button>
+  </section>
+       </div>
+       
+      <div><p id="schet">Ваш счет: <span id="scoreSpan"></span></p></div>
+      <div id="pole" class="game">
+          <div id="mickey"></div>
+          <div id="cheese"></div>
+      </div>
+   
+      <div class="knopki">
+        
+        <button id ="st" class="btn d" type="submit" onclick="func_back();">В начало</button>
+        <button class="btn d" type="submit" onclick="nov();">Заново</button>
+        
+        </div>
+ 
+
+<script src="js/levelthree.js"></script>
+</body>
+</html>

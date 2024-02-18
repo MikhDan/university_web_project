@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>LevelOne</title>
+  <link rel="stylesheet" href="css/levelone.css">
+</head>
+<body>
+  <section id="rules">
+      <div class="common">
+        <p class="title">Правила уровня:</p>
+        <section>
+          <ol>
+            <li>Вы увидите выключенную лампочку.</li>
+            <li>Лампочка включится через определенное время.</li>
+            <li>Попробуйте посчитать через сколько секунд это произойдет.</li>
+            <li>Введите ответ.</li>
+            <li>Нажмите на кнопку "Проверить", чтобы узнать результат.</li>
+            <li>При неправильном ответе повторно введите предполагаемое значение.</li>
+            <li>Правильный ответ дает +5 баллов.</li>
+            <li>Неправильный ответ дает -1 балл.</li>
+         </ol>
+      </section>   
+
+      <section id="ps">
+       <p> <i>P.S. Помните, всегда есть возможность завершить уровень и вернуться на начальный экран.</i></p> 
+      </section>
+          <button class="btn" type="submit"  onclick="func_pon();">Понятно</button>
+      </div>
+     </section>
+
+
+     <div id="pole">
+      <p>Ваш счет: <span id="score">0</span></p>
+        <img id="bulb" src="img/bulboff.jpg">
+             <div class="txt">
+             <label for="vvod">Лампочка включилась через: </label>
+             <input type="text" id="vvod" name="vvod" required minlength="1" maxlength="2" size="10" />
+                <div class="knopki">
+                <button id="guess" class="btn d" type="submit">Проверить</button>
+                <button class="btn d" type="submit" onclick="func_back();">В начало</button>
+                <button class="btn d" type="submit" onclick="nov();">Заново</button>
+                <button id= "sled" class="btn d" type="submit" >Следующий уровень</button>
+                </div>
+             </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+     </div>
+    
+<script src="js/levelone.js"></script>
+</body>
+</html>

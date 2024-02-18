@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>LevelTwo</title>
+  <link rel="stylesheet" href="css/leveltwo.css">
+  
+  </head>
+<body onload="startGame()">
+  <section id="rules">
+      <div class="common">
+        <p class="title">Правила уровня:</p>
+        <section>
+          <ol>
+            <li>В левом нижнем углу расположен элемент.</li>
+            <li>В правом верхнем углу пункт назначения.</li>
+            <li>Помогите добраться до конца за 10 секунд, избегая препятствий.</li>
+            <li>Достижение финиша дает +5 баллов.</li>
+            <li>Столкновение с препятствием дает -1 балл.</li>
+            <li>Столкновение с препятствием отправляет в начало.</li>
+            <li>Если время выйдет до того, как вы доберетесь до финиша, то счет уменьшится на 10 очков.</li>
+            <li>Управление осуществляется стрелочками или клавишами WASD.</li>
+          </ol> 
+      </section>  
+
+      <section id="ps"> 
+       <p> <i>P.S. Помните, всегда есть возможность завершить уровень и вернуться на начальный экран.</i></p> 
+      </section>
+          <button class="btn" type="submit" onclick="func_pon();" >Понятно</button>
+      </div>
+  </section>
+  <div><p id="schet">Ваш счет: <span id="scoreSpan"></span></p></div>
+  <div><p id="vremya">Осталось: <span id="vremyaSpan"></span></p></div>
+  <div class="knopki">
+  <button class="btn d" type="submit" onclick="func_back();">В начало</button>
+                <button class="btn d" type="submit" onclick="nov();">Заново</button>
+                <button id= "sled" class="btn d" type="submit" >Следующий уровень</button>
+              </div>
+
+
+
+    
+<script src="js/leveltwo.js"></script>
+
+</body>
+</html>
